@@ -1,0 +1,8 @@
+uuid: 041ad78a-4676-47ea-9a6d-40948fb2f972
+langcode: en
+status: true
+dependencies: {  }
+id: featurette
+label: Featurette
+revision: 0
+description: 'A title, a subtitle, an image and a body. Used in https://getbootstrap.com/docs/4.3/examples/carousel/'

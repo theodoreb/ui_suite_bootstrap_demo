@@ -1,0 +1,18 @@
+uuid: 1a6cbd20-d113-4d1a-bb0d-79c7c92a433b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Album
+type: album
+description: 'https://getbootstrap.com/docs/4.5/examples/album/ '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

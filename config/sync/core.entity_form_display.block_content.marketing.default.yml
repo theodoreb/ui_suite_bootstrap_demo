@@ -1,0 +1,54 @@
+uuid: 4e14d0c7-2b88-4d8c-b594-624def90afb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.marketing
+    - field.field.block_content.marketing.body
+    - field.field.block_content.marketing.field_image
+    - field.field.block_content.marketing.field_link
+  module:
+    - link
+    - text
+id: block_content.marketing.default
+targetEntityType: block_content
+bundle: marketing
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_link:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

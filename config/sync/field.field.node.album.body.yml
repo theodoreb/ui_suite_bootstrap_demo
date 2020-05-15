@@ -1,0 +1,23 @@
+uuid: 3cffff11-5e29-4d6d-ab5a-25f4431be2b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.album
+  module:
+    - text
+id: node.album.body
+field_name: body
+entity_type: node
+bundle: album
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

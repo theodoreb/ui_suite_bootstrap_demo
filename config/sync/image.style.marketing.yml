@@ -1,0 +1,15 @@
+uuid: c246a290-2fc3-4ee8-82a5-1e6e93302e3a
+langcode: en
+status: true
+dependencies: {  }
+name: marketing
+label: 'Marketing (140x140)'
+effects:
+  68cf6a4c-3271-4a2f-bfb7-b7ef8d8701f0:
+    uuid: 68cf6a4c-3271-4a2f-bfb7-b7ef8d8701f0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 140
+      height: 140
+      anchor: center-center

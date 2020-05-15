@@ -1,0 +1,14 @@
+uuid: 5d8eaf6b-8649-4e70-b9c7-3e156ff7f444
+name: 'UI Suite Demo'
+mail: drupal@localhost
+slogan: 'Based on ui_suite_bootstrap theme.'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

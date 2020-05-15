@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a card_layout layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set element = settings.html_element ?: 'div' %}
+{% set separators = [settings.separator_even, settings.separator_odd] %}
+
+<{{element}}{{attributes}}>
+  {{ content }}
+</{{element}}>

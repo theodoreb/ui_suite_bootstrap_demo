@@ -1,0 +1,117 @@
+<?php
+
+/**
+ * @file
+ * Some hooks.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preproces_HOOK() for nodes.
+ */
+function ui_suite_bootstrap_demo_examples_preprocess_node(&$vars) {
+  // Sorry for that, but we need to deal with custom CSS from the Bootstrap
+  // examples pages.
+  if ($vars['node']->bundle() == 'album' && $vars['view_mode'] == 'full') {
+    // Source: https://getbootstrap.com/docs/4.4/examples/album/
+    $vars['#attached']['library'][] = 'ui_suite_bootstrap/album_example';
+    $vars['content'] = [
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => "Mockup using only render arrays: ",
+        0 => [
+          '#type' => 'link',
+          '#title' => '/examples/album',
+          '#url' => Url::fromRoute('ui_examples.single', ['name' => 'album']),
+        ],
+      ],
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => "Site building: ",
+        0 => [
+          '#type' => 'link',
+          '#title' => 'with Layout Builder',
+          '#url' => Url::fromRoute('layout_builder.defaults.node.view', ['node_type' => 'album', 'view_mode_name' => 'default']),
+        ],
+      ],
+      $vars['content'],
+    ];
+  }
+  if ($vars['node']->bundle() == 'carousel' && $vars['view_mode'] == 'full') {
+    // Source: https://getbootstrap.com/docs/4.4/examples/carousel/
+    $vars['#attached']['library'][] = 'ui_suite_bootstrap/carousel_example';
+    $vars['content'] = [
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => "Mockup using only render arrays: ",
+        0 => [
+          '#type' => 'link',
+          '#title' => '/examples/carousel',
+          '#url' => Url::fromRoute('ui_examples.single', ['name' => 'carousel']),
+        ],
+      ],
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => "Site building: ",
+        0 => [
+          '#type' => 'link',
+          '#title' => 'with Layout Builder',
+          '#url' => Url::fromRoute('layout_builder.defaults.node.view', ['node_type' => 'carousel', 'view_mode_name' => 'default']),
+        ],
+      ],
+      $vars['content'],
+    ];
+  }
+  if ($vars['node']->bundle() == 'pricing' && $vars['view_mode'] == 'full') {
+    // Source: https://getbootstrap.com/docs/4.4/examples/pricing/
+    $vars['#attached']['library'][] = 'ui_suite_bootstrap/pricing_example';
+    $vars['content'] = [
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => "Mockup using only render arrays: ",
+        0 => [
+          '#type' => 'link',
+          '#title' => '/examples/pricing',
+          '#url' => Url::fromRoute('ui_examples.single', ['name' => 'pricing']),
+        ],
+      ],
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => "Site building: ",
+        0 => [
+          '#type' => 'link',
+          '#title' => 'with Layout Builder',
+          '#url' => Url::fromRoute('layout_builder.defaults.node.view', ['node_type' => 'pricing', 'view_mode_name' => 'default']),
+        ],
+      ],
+      $vars['content'],
+    ];
+  }
+}
+
+/**
+ * Implements hook_preproces_HOOK() for pages.
+ */
+function ui_suite_bootstrap_demo_examples_preprocess_page(&$vars) {
+  // Same as ui_suite_bootstrap_demo_examples_preprocess_node.
+  $route = \Drupal::routeMatch();
+  if ($route->getRouteName() === 'layout_builder.defaults.node.view') {
+    $bundle = $route->getParameter('bundle');
+    if ($bundle === 'album') {
+      $vars['#attached']['library'][] = 'ui_suite_bootstrap/album_example';
+    }
+    if ($bundle === 'carousel') {
+      $vars['#attached']['library'][] = 'ui_suite_bootstrap/carousel_example';
+    }
+    if ($bundle === 'pricing') {
+      $vars['#attached']['library'][] = 'ui_suite_bootstrap/pricing_example';
+    }
+  }
+}

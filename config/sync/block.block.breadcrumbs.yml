@@ -1,0 +1,124 @@
+uuid: de85a91a-9bbc-49c8-ade6-1ac38cb1f1ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - ui_patterns_blocks
+  theme:
+    - ui_suite_bootstrap
+id: breadcrumbs
+theme: ui_suite_bootstrap
+region: content
+weight: 1
+provider: null
+plugin: ui_patterns_system_breadcrumb_block
+settings:
+  id: ui_patterns_system_breadcrumb_block
+  label: Breadcrumbs
+  provider: ui_patterns_blocks
+  label_display: '0'
+  pattern: breadcrumb
+  variants:
+    list_group: default
+    card: default
+    list: default
+    card_layout: default
+    button_group: default
+    blockquote: default
+    badge: primary
+    button: primary
+    carousel: default
+    jumbotron: default
+  pattern_mapping:
+    media:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    list_group:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    menu:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    card:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    list:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    card_layout:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    button_group:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    blockquote:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    badge:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    button:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    carousel:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    jumbotron:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    grid_row:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: _hidden
+          weight: '0'
+    breadcrumb:
+      settings:
+        'system_breadcrumb_block:links':
+          destination: items
+          weight: '0'
+  pattern_settings:
+    media:
+      image_position: ''
+      image_margin: ''
+    card:
+      image_position: ''
+      heading_level: ''
+    list:
+      list_type: ''
+    carousel:
+      with_controls: '0'
+      with_indicators: '0'
+    grid_row:
+      with_container: '0'
+      no_gutters: '0'
+      col_xs: ''
+      col_sm: ''
+      col_md: ''
+      col_lg: ''
+      col_xl: ''
+      spacing_margin_bottom: ''
+visibility: {  }

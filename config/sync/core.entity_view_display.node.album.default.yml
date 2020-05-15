@@ -1,0 +1,833 @@
+uuid: eb33a2bf-3d6d-4f19-9ccc-5b5b6bfc2338
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.album.body
+    - field.field.node.album.field_links
+    - field.field.node.album.field_medias
+    - node.type.album
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: pattern_jumbotron
+        layout_settings:
+          label: Header
+          pattern:
+            field_templates: default
+            variant: default
+        components:
+          1bbd6b4a-44ab-468c-9e22-b6710980988e:
+            uuid: 1bbd6b4a-44ab-468c-9e22-b6710980988e
+            region: content
+            configuration:
+              id: 'field_block:node:album:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: ddsl_string
+                settings:
+                  link_to_entity: 0
+                  html_element: h1
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: border-primary
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+            weight: 0
+          9b5963e8-6064-4acb-b0de-a29e4f6eff86:
+            uuid: 9b5963e8-6064-4acb-b0de-a29e4f6eff86
+            region: content
+            configuration:
+              id: 'field_block:node:album:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: ddsl_text
+                settings:
+                  trim_length: '600'
+                  ellipsis: 1
+                  word_boundary: 1
+                  use_summary: 0
+                  token_replace: 0
+                  filter: drupal
+                  format: plain_text
+                  allowed_html:
+                    - a
+                    - b
+                    - br
+                    - dd
+                    - dl
+                    - dt
+                    - em
+                    - i
+                    - li
+                    - ol
+                    - p
+                    - strong
+                    - u
+                    - ul
+                  autop: 0
+                  html_element: p
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: text-muted
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: lead
+            weight: 1
+          057a6043-b8e4-406a-9a0c-58f04bfe5079:
+            uuid: 057a6043-b8e4-406a-9a0c-58f04bfe5079
+            region: content
+            configuration:
+              id: 'field_block:node:album:field_links'
+              label: Links
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: pattern_formatter
+                settings:
+                  pattern: button
+                  variants:
+                    list_group: default
+                    card: default
+                    list: default
+                    card_layout: default
+                    button_group: default
+                    blockquote: default
+                    badge: primary
+                    button: primary
+                    carousel: default
+                    jumbotron: default
+                  pattern_mapping:
+                    media:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    list_group:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    card:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    list:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    card_layout:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    button_group:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    blockquote:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    badge:
+                      settings:
+                        'field_properties:uri':
+                          destination: url
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    button:
+                      settings:
+                        'field_properties:uri':
+                          destination: url
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    carousel:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    jumbotron:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    grid_row:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                  pattern_settings:
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                    card:
+                      image_position: ''
+                    list:
+                      list_type: ''
+                    carousel:
+                      with_controls: '0'
+                      with_indicators: '0'
+                    grid_row:
+                      with_container: '0'
+                      no_gutters: '0'
+                third_party_settings:
+                  field_formatter_range:
+                    reverse: 0
+                    limit: '1'
+                    offset: '0'
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: mt-2
+                spacing_margin_bottom: mb-2
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+            weight: 2
+          17ea90f2-b2d1-4c3f-9c16-621e1b8ca8f8:
+            uuid: 17ea90f2-b2d1-4c3f-9c16-621e1b8ca8f8
+            region: content
+            configuration:
+              id: 'field_block:node:album:field_links'
+              label: Links
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: pattern_formatter
+                settings:
+                  pattern: button
+                  variants:
+                    list_group: default
+                    card: default
+                    list: default
+                    card_layout: default
+                    button_group: default
+                    blockquote: default
+                    badge: secondary
+                    button: secondary
+                    carousel: default
+                    jumbotron: default
+                  pattern_mapping:
+                    media:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    list_group:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    card:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    list:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    card_layout:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    button_group:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    blockquote:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    badge:
+                      settings:
+                        'field_properties:uri':
+                          destination: url
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    button:
+                      settings:
+                        'field_properties:uri':
+                          destination: url
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    carousel:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    jumbotron:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    grid_row:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                  pattern_settings:
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                    card:
+                      image_position: ''
+                    list:
+                      list_type: ''
+                    carousel:
+                      with_controls: '0'
+                      with_indicators: '0'
+                    grid_row:
+                      with_container: '0'
+                      no_gutters: '0'
+                third_party_settings:
+                  field_formatter_range:
+                    reverse: 0
+                    limit: '99'
+                    offset: '1'
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: mt-2
+                spacing_margin_bottom: mb-2
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+            weight: 3
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: text-center
+              text_text_transform: ''
+              typography: ''
+            extra: ''
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Album
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+          classes: ''
+        components:
+          444c8e23-6d1b-480a-9169-602de9a838d7:
+            uuid: 444c8e23-6d1b-480a-9169-602de9a838d7
+            region: content
+            configuration:
+              id: 'field_block:node:album:field_medias'
+              label: Medias
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: pattern_wrapper_entity_reference_formatter
+                settings:
+                  view_mode: card
+                  pattern: grid_row
+                  variants:
+                    list_group: default
+                    navbar: default
+                    card: default
+                    list: default
+                    card_layout: default
+                    button_group: default
+                    blockquote: default
+                    badge: primary
+                    button: primary
+                    carousel: default
+                    jumbotron: default
+                  pattern_mapping:
+                    media:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    list_group:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    navbar:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    card:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    list:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    card_layout:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    button_group:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    blockquote:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: content
+                          weight: '0'
+                    badge:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    button:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    carousel:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    accordion:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    jumbotron:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: content
+                          weight: '0'
+                    grid_row:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: content
+                          weight: '0'
+                  pattern_settings:
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                    card:
+                      image_position: ''
+                      heading_level: ''
+                    list:
+                      list_type: ''
+                    carousel:
+                      with_controls: '0'
+                      with_indicators: '0'
+                    grid_row:
+                      with_container: '0'
+                      no_gutters: '0'
+                      col_xs: ''
+                      col_sm: ''
+                      col_md: col-md-4
+                      col_lg: ''
+                      col_xl: ''
+                      spacing_margin_bottom: mb-4
+                third_party_settings:
+                  field_formatter_range:
+                    reverse: 0
+                    limit: '0'
+                    offset: '0'
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: ''
+            weight: 2
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: bg-light
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: pt-5
+              spacing_padding_bottom: pb-5
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: ''
+              text_text_transform: ''
+              typography: ''
+            extra: album
+id: node.album.default
+targetEntityType: node
+bundle: album
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_links:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_medias:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

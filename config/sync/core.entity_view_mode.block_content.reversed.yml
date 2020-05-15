@@ -1,0 +1,10 @@
+uuid: edbf66a6-9459-4418-a9dd-d637373fc751
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.reversed
+label: Reversed
+targetEntityType: block_content
+cache: true

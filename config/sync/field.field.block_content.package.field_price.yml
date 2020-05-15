@@ -1,0 +1,23 @@
+uuid: 7663b5e8-4f82-4d02-a6a1-5bdf53d8d617
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.package
+    - field.storage.block_content.field_price
+id: block_content.package.field_price
+field_name: field_price
+entity_type: block_content
+bundle: package
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ' / mo'
+field_type: integer

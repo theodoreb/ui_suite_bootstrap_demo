@@ -1,0 +1,136 @@
+uuid: ce109d67-14bb-44e3-84ae-e1c728487175
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card
+    - field.field.media.image.field_body
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - ctools
+    - image
+    - layout_builder
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: pattern_card
+        layout_settings:
+          label: ''
+          pattern:
+            field_templates: default
+            variant: default
+          spacing_margin_top: ''
+          spacing_margin_bottom: ''
+          spacing_padding_top: ''
+          spacing_padding_bottom: ''
+          spacing_padding_left: ''
+          spacing_padding_right: ''
+          colors_background_color: ''
+          text_alignment: ''
+          shadows: shadow-sm
+          classes: ''
+        components:
+          d03d022a-ef90-46d1-95cc-79294874aeb4:
+            uuid: d03d022a-ef90-46d1-95cc-79294874aeb4
+            region: image
+            configuration:
+              id: 'field_block:media:image:field_media_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: card
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          b56054cd-d23b-4349-98fc-044bc38382fb:
+            uuid: b56054cd-d23b-4349-98fc-044bc38382fb
+            region: text
+            configuration:
+              id: 'field_block:media:image:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: advanced_text
+                settings:
+                  trim_length: '160'
+                  ellipsis: 0
+                  word_boundary: 0
+                  use_summary: 0
+                  token_replace: 0
+                  filter: input
+                  format: plain_text
+                  allowed_html:
+                    - a
+                    - b
+                    - br
+                    - dd
+                    - dl
+                    - dt
+                    - em
+                    - i
+                    - li
+                    - ol
+                    - p
+                    - strong
+                    - u
+                    - ul
+                  autop: 0
+                third_party_settings:
+                  field_formatter_filter:
+                    format: plain_text
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          97e488fb-a05f-4543-a400-ceeff5ac1c14:
+            uuid: 97e488fb-a05f-4543-a400-ceeff5ac1c14
+            region: body
+            configuration:
+              id: 'entity_view:media'
+              label: 'Button groups'
+              provider: ctools
+              label_display: '0'
+              view_mode: _group_1_
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 5
+        third_party_settings: {  }
+id: media.image.card
+targetEntityType: media
+bundle: image
+mode: card
+content:
+  field_media_image:
+    weight: 0
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_body: true
+  name: true
+  thumbnail: true
+  uid: true

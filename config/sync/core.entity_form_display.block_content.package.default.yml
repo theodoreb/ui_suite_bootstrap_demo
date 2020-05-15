@@ -1,0 +1,50 @@
+uuid: e58c3eb8-a92f-4cb8-b4cc-fa421e126205
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.package
+    - field.field.block_content.package.field_features
+    - field.field.block_content.package.field_link
+    - field.field.block_content.package.field_price
+    - field.field.block_content.package.layout_builder__layout
+  module:
+    - link
+id: block_content.package.default
+targetEntityType: block_content
+bundle: package
+mode: default
+content:
+  field_features:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_price:
+    weight: 28
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

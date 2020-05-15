@@ -1,0 +1,8 @@
+uuid: 95b51db8-34a6-45a3-b845-d77ba4df041c
+langcode: en
+status: true
+dependencies: {  }
+id: marketing
+label: Marketing
+revision: 0
+description: 'A title, an image, a body, and a link. Used for carousel slide & marketing highlights on https://getbootstrap.com/docs/4.3/examples/carousel/'

@@ -1,0 +1,23 @@
+uuid: bb2471e8-9a65-468d-b831-90ad42511fc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.carousel
+  module:
+    - text
+id: node.carousel.body
+field_name: body
+entity_type: node
+bundle: carousel
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,15 @@
+uuid: 6d4fa10c-6963-4b6a-bab1-5342f2db3526
+langcode: en
+status: true
+dependencies: {  }
+name: featurette
+label: 'Featurette (445x445)'
+effects:
+  0ce620cd-2287-4935-b82a-afbd5cf179f7:
+    uuid: 0ce620cd-2287-4935-b82a-afbd5cf179f7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 445
+      height: 445
+      anchor: center-center

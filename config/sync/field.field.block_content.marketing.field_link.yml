@@ -1,0 +1,23 @@
+uuid: 17af2a94-8cfc-47ce-80a9-06ff4c3f466c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.marketing
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.marketing.field_link
+field_name: field_link
+entity_type: block_content
+bundle: marketing
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,33 @@
+uuid: cadcebde-d7de-4bbf-bbd1-d1d1e6323155
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.carousel.body
+    - field.field.node.carousel.field_marketing
+    - node.type.carousel
+  module:
+    - text
+    - user
+id: node.carousel.teaser
+targetEntityType: node
+bundle: carousel
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_articles: true
+  field_marketing: true

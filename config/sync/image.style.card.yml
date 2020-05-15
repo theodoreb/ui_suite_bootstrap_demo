@@ -1,0 +1,15 @@
+uuid: 494c4b7e-f48c-4ea5-a02c-1da60326d670
+langcode: en
+status: true
+dependencies: {  }
+name: card
+label: 'Card (350x225)'
+effects:
+  97593509-497e-49d4-b1e9-f317164b7227:
+    uuid: 97593509-497e-49d4-b1e9-f317164b7227
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 225
+      anchor: center-center

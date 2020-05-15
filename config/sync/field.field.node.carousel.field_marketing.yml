@@ -1,0 +1,28 @@
+uuid: 949df7d3-4ece-4771-ab48-c4dbfe37a5e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.marketing
+    - field.storage.node.field_marketing
+    - node.type.carousel
+id: node.carousel.field_marketing
+field_name: field_marketing
+entity_type: node
+bundle: carousel
+label: Marketing
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      marketing: marketing
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

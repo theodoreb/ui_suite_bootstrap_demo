@@ -1,0 +1,193 @@
+uuid: 9856b7c2-7b0b-490e-aec6-783417413a8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featurette
+    - core.entity_view_mode.block_content.reversed
+    - field.field.block_content.featurette.body
+    - field.field.block_content.featurette.field_image
+    - field.field.block_content.featurette.field_subtitle
+  module:
+    - ctools
+    - layout_builder
+    - text
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: bootstrap_grid_row_2
+        layout_settings:
+          label: ''
+          main:
+            col_xl: ''
+            col_lg: ''
+            col_md: col-md-5
+            col_sm: ''
+            col_xs: ''
+          second:
+            col_xl: ''
+            col_lg: ''
+            col_md: ''
+            col_sm: col-sm-7
+            col_xs: ''
+          no_gutters: ''
+          with_container: ''
+          classes: ''
+          variant: ''
+          pattern_settings: {  }
+        components:
+          857d2972-1f2b-40b4-84c0-7520076f24b2:
+            uuid: 857d2972-1f2b-40b4-84c0-7520076f24b2
+            region: second
+            configuration:
+              id: 'field_block:block_content:featurette:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: ddsl_text
+                settings:
+                  trim_length: '600'
+                  ellipsis: 1
+                  word_boundary: 1
+                  use_summary: 0
+                  token_replace: 0
+                  filter: input
+                  format: plain_text
+                  allowed_html:
+                    - a
+                    - b
+                    - br
+                    - dd
+                    - dl
+                    - dt
+                    - em
+                    - i
+                    - li
+                    - ol
+                    - p
+                    - strong
+                    - u
+                    - ul
+                  autop: 0
+                  html_element: span
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: lead
+            weight: -9
+          a2f759bf-01bd-4774-a018-b4aaf323f9cc:
+            uuid: a2f759bf-01bd-4774-a018-b4aaf323f9cc
+            region: main
+            configuration:
+              id: 'field_block:block_content:featurette:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: featurette
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          ff42e75a-4628-4a19-ad3b-15e44322fb84:
+            uuid: ff42e75a-4628-4a19-ad3b-15e44322fb84
+            region: second
+            configuration:
+              id: 'entity_view:block_content'
+              label: 'Entity view (Custom block)'
+              provider: ctools
+              label_display: '0'
+              view_mode: _group_1_
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -10
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: ''
+              text_text_transform: ''
+              typography: ''
+            extra: ''
+id: block_content.featurette.reversed
+targetEntityType: block_content
+bundle: featurette
+mode: reversed
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

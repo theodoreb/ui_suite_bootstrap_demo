@@ -1,0 +1,10 @@
+uuid: b3a8397f-8fd2-467f-9d49-ee4ba9546130
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content._group_1_
+label: '(Group 1)'
+targetEntityType: block_content
+cache: true

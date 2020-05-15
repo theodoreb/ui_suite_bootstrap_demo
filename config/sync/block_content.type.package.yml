@@ -1,0 +1,8 @@
+uuid: a589f52a-36c0-4e6e-b09f-4be9572535b1
+langcode: en
+status: true
+dependencies: {  }
+id: package
+label: Package
+revision: 0
+description: 'https://getbootstrap.com/docs/4.3/examples/pricing/'

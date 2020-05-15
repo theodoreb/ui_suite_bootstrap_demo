@@ -1,0 +1,10 @@
+name: "UI Suite Bootstrap Demo: Tools"
+type: module
+description: Some plugins to help site building.
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - ui_patterns:ui_patterns
+  - ui_patterns_settings:ui_patterns_settings
+  - drupal:layout_builder
+  - advanced_text_formatter:advanced_text_formatter

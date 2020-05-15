@@ -1,0 +1,500 @@
+uuid: 1b28918f-30fb-4323-840d-28ddd23c75b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.carousel.body
+    - field.field.node.carousel.field_marketing
+    - node.type.carousel
+  content:
+    - 'block_content:featurette:4c22181e-cba3-4998-b652-6cc08789d001'
+    - 'block_content:featurette:4c53a283-d360-4205-b227-7101929b56e2'
+    - 'block_content:featurette:f8f89abd-f1a0-4a5d-a200-cc8702454ecb'
+    - 'block_content:marketing:1d63c4c5-6120-4941-9e7b-f05db2e04fed'
+  module:
+    - block_content
+    - ui_suite_bootstrap_demo_tools
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Carousel (from entity reference field)'
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+          classes: ''
+          spacing_margin_top: ''
+          spacing_margin_bottom: ''
+          spacing_padding_top: ''
+          spacing_padding_bottom: ''
+          spacing_padding_left: ''
+          spacing_padding_right: ''
+          spacing_horizontal_centering: 0
+          colors_background_color: ''
+          text_alignment: ''
+        components:
+          90a8f401-6817-4cf8-9057-1d1930c05769:
+            uuid: 90a8f401-6817-4cf8-9057-1d1930c05769
+            region: content
+            configuration:
+              id: 'field_block:node:carousel:field_marketing'
+              label: Marketing
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: pattern_wrapper_entity_reference_formatter
+                settings:
+                  view_mode: slide
+                  pattern: carousel
+                  variants:
+                    list_group: default
+                    card: default
+                    list: default
+                    card_layout: default
+                    button_group: default
+                    blockquote: default
+                    badge: primary
+                    button: primary
+                    carousel: default
+                    jumbotron: default
+                  pattern_mapping:
+                    media:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    list_group:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    card:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    list:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    card_layout:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    button_group:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    blockquote:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    badge:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    button:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    carousel:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: slides
+                          weight: '0'
+                    jumbotron:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                    grid_row:
+                      settings:
+                        'field_wrapper:label':
+                          destination: _hidden
+                          weight: '0'
+                        'field_wrapper:items':
+                          destination: _hidden
+                          weight: '0'
+                  pattern_settings:
+                    media:
+                      image_position: ''
+                      image_margin: ''
+                    card:
+                      image_position: ''
+                    list:
+                      list_type: ''
+                    carousel:
+                      with_controls: '1'
+                      with_indicators: '1'
+                    grid_row:
+                      with_container: '0'
+                      no_gutters: '0'
+                third_party_settings:
+                  field_formatter_range:
+                    reverse: 0
+                    limit: '0'
+                    offset: '0'
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: bootstrap_grid_row_3
+        layout_settings:
+          label: Marketing
+          main:
+            col_xl: ''
+            col_lg: col-lg-4
+            col_md: ''
+            col_sm: ''
+            col_xs: ''
+          second:
+            col_xl: ''
+            col_lg: col-lg-4
+            col_md: ''
+            col_sm: ''
+            col_xs: ''
+          third:
+            col_xl: ''
+            col_lg: ''
+            col_md: col-md-4
+            col_sm: ''
+            col_xs: ''
+          no_gutters: ''
+          with_container: ''
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+        components:
+          4c6a38e6-00ab-4dc7-976a-b3758b1a6aa0:
+            uuid: 4c6a38e6-00ab-4dc7-976a-b3758b1a6aa0
+            region: main
+            configuration:
+              id: 'block_content:1d63c4c5-6120-4941-9e7b-f05db2e04fed'
+              label: Heading
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          b1527ab2-20a2-43e4-82f3-705585941f92:
+            uuid: b1527ab2-20a2-43e4-82f3-705585941f92
+            region: second
+            configuration:
+              id: 'block_content:1d63c4c5-6120-4941-9e7b-f05db2e04fed'
+              label: Heading
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          fe0c97f4-40a8-4811-b952-3dea27fc9f4c:
+            uuid: fe0c97f4-40a8-4811-b952-3dea27fc9f4c
+            region: third
+            configuration:
+              id: 'block_content:1d63c4c5-6120-4941-9e7b-f05db2e04fed'
+              label: Heading
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: ''
+              text_text_transform: ''
+              typography: ''
+            extra: marketing
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Featurettes
+          variant: ''
+          pattern_settings: {  }
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+          classes: ''
+          spacing_margin_top: ''
+          spacing_margin_bottom: ''
+          spacing_padding_top: ''
+          spacing_padding_bottom: ''
+          spacing_padding_left: ''
+          spacing_padding_right: ''
+          spacing_horizontal_centering: false
+          colors_background_color: ''
+          text_alignment: ''
+        components:
+          9834ea31-9852-4ef1-81e1-a597fe234b5e:
+            uuid: 9834ea31-9852-4ef1-81e1-a597fe234b5e
+            region: content
+            configuration:
+              id: 'block_content:4c22181e-cba3-4998-b652-6cc08789d001'
+              label: 'First featurette heading'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+          aaf6f1f3-db9f-4105-a91e-333be3870da7:
+            uuid: aaf6f1f3-db9f-4105-a91e-333be3870da7
+            region: content
+            configuration:
+              id: 'block_content:4c53a283-d360-4205-b227-7101929b56e2'
+              label: 'Oh yeah, it’s that good.'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: reversed
+              context_mapping: {  }
+            additional: {  }
+            weight: 3
+          bdc2892e-be79-4418-a280-eca4bcf026e9:
+            uuid: bdc2892e-be79-4418-a280-eca4bcf026e9
+            region: content
+            configuration:
+              id: ddsp_horizontal_rule
+              label: 'Horizontal Rule [custom]'
+              provider: ddsp_core
+              label_display: '0'
+              classes: ''
+              context_mapping: {  }
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: featurette-divider
+            weight: 0
+          73aa80f2-4149-4a16-b01e-14cfe9fa51b2:
+            uuid: 73aa80f2-4149-4a16-b01e-14cfe9fa51b2
+            region: content
+            configuration:
+              id: ddsp_horizontal_rule
+              label: 'Horizontal Rule [custom]'
+              provider: ddsp_core
+              label_display: '0'
+              classes: ''
+              context_mapping: {  }
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: featurette-divider
+            weight: 2
+          02f41720-5f46-4caa-931e-e329f68ca31a:
+            uuid: 02f41720-5f46-4caa-931e-e329f68ca31a
+            region: content
+            configuration:
+              id: ddsp_horizontal_rule
+              label: 'Horizontal Rule [custom]'
+              provider: ddsp_core
+              label_display: '0'
+              classes: ''
+              context_mapping: {  }
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: featurette-divider
+            weight: 4
+          b3c1ac88-a5f2-494a-ae14-eb616c3c2e8e:
+            uuid: b3c1ac88-a5f2-494a-ae14-eb616c3c2e8e
+            region: content
+            configuration:
+              id: 'block_content:f8f89abd-f1a0-4a5d-a200-cc8702454ecb'
+              label: 'And lastly, this one.'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 5
+          da252dd1-0f47-44d8-9ffc-ccfaa0bdb96e:
+            uuid: da252dd1-0f47-44d8-9ffc-ccfaa0bdb96e
+            region: content
+            configuration:
+              id: ddsp_horizontal_rule
+              label: 'Horizontal Rule [custom]'
+              provider: ddsp_core
+              label_display: '0'
+              classes: featurette-divider
+              context_mapping: {  }
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+id: node.carousel.default
+targetEntityType: node
+bundle: carousel
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_marketing:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

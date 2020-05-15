@@ -1,0 +1,33 @@
+name: "UI Suite Bootstrap Demo: Examples"
+type: module
+description: Content entities for ui_suite_bootstrap_demo.
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - default_content:default_content
+  - ui_examples:ui_examples
+
+default_content:
+  node:
+    - aa72802a-4f8e-439c-bc3b-201d7f143389
+    - f852b81e-fe2c-4f3e-9b03-5941a692547a
+    - d09ccfec-399e-4a9b-ac19-ee8f6b1ce6e4
+  media:
+    - db94d538-1870-4c3f-98d1-c9330abb40aa
+    - fb2039be-5b0c-4096-8b58-9162cecf0d01
+    - 748a64ee-9f82-471c-842a-1e0849121f03
+  file:
+    - 93ffb477-9cb1-4ad9-857c-c10c1eceb4c7
+    - 3f055678-3942-4451-964b-f9e2e9491f47
+    - 9dddbd47-679a-4e8c-9755-53d4e2847af2
+  block_content:
+    - 4c22181e-cba3-4998-b652-6cc08789d001
+    - 4c53a283-d360-4205-b227-7101929b56e2
+    - f8f89abd-f1a0-4a5d-a200-cc8702454ecb
+    - 1d63c4c5-6120-4941-9e7b-f05db2e04fed
+    - 265146f2-243d-43fc-9437-5d8379218664
+    - c93c4c3f-9033-48cd-bb03-1f5c1bc66976
+    - 42f1fcae-8c9f-4a0e-bd55-e267e8a81694
+    - f0abfd4f-133d-4cd2-aa35-9e7975e10495
+    - f1e4c76c-2153-4213-b7db-73959990a430
+    - bb7b6969-3f5c-48f0-834a-f92fc36b03ad

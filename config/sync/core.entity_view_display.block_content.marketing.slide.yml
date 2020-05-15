@@ -1,0 +1,239 @@
+uuid: 7797434b-b53f-43a7-97db-a88d669d6ebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.marketing
+    - core.entity_view_mode.block_content.slide
+    - field.field.block_content.marketing.body
+    - field.field.block_content.marketing.field_image
+    - field.field.block_content.marketing.field_link
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ac6b75a3-d916-465b-a13b-e0af432af9a0:
+            uuid: ac6b75a3-d916-465b-a13b-e0af432af9a0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:marketing:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          f7d92229-f34c-4799-b4d3-a68843f82516:
+            uuid: f7d92229-f34c-4799-b4d3-a68843f82516
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:field_link'
+              label: Link
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: pattern_formatter
+                settings:
+                  pattern: button
+                  variants:
+                    button: primary__lg
+                    carousel: default
+                    jumbotron: default
+                    button_group: default
+                    badge: primary
+                    card: default
+                  pattern_mapping:
+                    button:
+                      settings:
+                        'field_properties:uri':
+                          destination: url
+                          weight: '0'
+                        'field_properties:title':
+                          destination: label
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    carousel:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    grid_row:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    jumbotron:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    button_group:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    badge:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    card:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                    modal:
+                      settings:
+                        'field_properties:uri':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:title':
+                          destination: _hidden
+                          weight: '0'
+                        'field_properties:options':
+                          destination: _hidden
+                          weight: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          69c7db30-6273-42c7-a05c-fd623e26820b:
+            uuid: 69c7db30-6273-42c7-a05c-fd623e26820b
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: slide
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          8d14b377-fd98-4d9f-8c5c-0f08f02a1450:
+            uuid: 8d14b377-fd98-4d9f-8c5c-0f08f02a1450
+            region: content
+            configuration:
+              id: 'field_block:block_content:marketing:info'
+              label: 'Block description'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: ddsl_string
+                settings:
+                  link_to_entity: 0
+                  html_element: h1
+                  typography: ''
+                  text_alignment: ''
+                  text_transform: ''
+                  font_weight_italics: ''
+                  spacing_margin_top: ''
+                  spacing_margin_bottom: ''
+                  spacing_padding_top: ''
+                  spacing_padding_bottom: ''
+                  colors_color: ''
+                  colors_background_color: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: block_content.marketing.slide
+targetEntityType: block_content
+bundle: marketing
+mode: slide
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

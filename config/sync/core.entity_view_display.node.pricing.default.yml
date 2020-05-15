@@ -1,0 +1,255 @@
+uuid: 2791beaf-ee6a-4622-a76d-fcc2ea8f88f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pricing.body
+    - node.type.pricing
+    - views.view.packages
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Header
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+          classes: ''
+        components:
+          f570cd46-b3f4-410a-bc3f-88dbd98506e5:
+            uuid: f570cd46-b3f4-410a-bc3f-88dbd98506e5
+            region: content
+            configuration:
+              id: 'field_block:node:pricing:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: ddsl_string
+                settings:
+                  link_to_entity: 0
+                  html_element: h1
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: display-4
+            weight: 0
+          882b0b55-5c98-4b11-9781-ac9d0849a90b:
+            uuid: 882b0b55-5c98-4b11-9781-ac9d0849a90b
+            region: content
+            configuration:
+              id: 'field_block:node:pricing:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: ddsl_text
+                settings:
+                  trim_length: '600'
+                  ellipsis: 0
+                  word_boundary: 0
+                  use_summary: 0
+                  token_replace: 0
+                  filter: drupal
+                  format: plain_text
+                  allowed_html:
+                    - a
+                    - b
+                    - br
+                    - dd
+                    - dl
+                    - dt
+                    - em
+                    - i
+                    - li
+                    - ol
+                    - p
+                    - strong
+                    - u
+                    - ul
+                  autop: 0
+                  html_element: p
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: ''
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: ''
+                text_text_transform: ''
+                typography: lead
+            weight: 1
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: ''
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: pt-3
+              spacing_padding_bottom: pb-3
+              spacing_padding_left: pl-3
+              spacing_padding_right: pr-3
+              spacing_horizontal_centering: mx-auto
+              text_text_alignment: text-center
+              text_text_transform: ''
+              typography: ''
+            extra: pricing-header
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          variant: ''
+          pattern_settings:
+            grid_row:
+              with_container: '0'
+              no_gutters: '0'
+          col: ''
+          col-sm: ''
+          col-md: ''
+          col-lg: ''
+          col-xl: ''
+          classes: ''
+        components:
+          5c32d439-2036-438c-9a3b-c8d850806791:
+            uuid: 5c32d439-2036-438c-9a3b-c8d850806791
+            region: content
+            configuration:
+              id: 'views_block:packages-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional:
+              ui_styles:
+                borders_border: ''
+                borders_border_color: ''
+                borders_border_radius: ''
+                colors_background_color: ''
+                colors_color: ''
+                text_font_weight: ''
+                text_font_italics: ''
+                shadows: ''
+                spacing_margin_top: ''
+                spacing_margin_bottom: ''
+                spacing_margin_left: ''
+                spacing_margin_right: ''
+                spacing_padding_top: ''
+                spacing_padding_bottom: pb-3
+                spacing_padding_left: ''
+                spacing_padding_right: ''
+                spacing_horizontal_centering: ''
+                text_text_alignment: text-center
+                text_text_transform: ''
+                typography: ''
+              ui_styles_extra: ''
+            weight: 0
+        third_party_settings:
+          ui_styles:
+            selected:
+              borders_border: ''
+              borders_border_color: ''
+              borders_border_radius: ''
+              colors_background_color: ''
+              colors_color: ''
+              text_font_weight: ''
+              text_font_italics: ''
+              shadows: ''
+              spacing_margin_top: ''
+              spacing_margin_bottom: mb-3
+              spacing_margin_left: ''
+              spacing_margin_right: ''
+              spacing_padding_top: ''
+              spacing_padding_bottom: ''
+              spacing_padding_left: ''
+              spacing_padding_right: ''
+              spacing_horizontal_centering: ''
+              text_text_alignment: text-center
+              text_text_transform: ''
+              typography: ''
+id: node.pricing.default
+targetEntityType: node
+bundle: pricing
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
