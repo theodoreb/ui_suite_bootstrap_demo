@@ -188,9 +188,9 @@ third_party_settings:
                       no_gutters: '0'
                 third_party_settings:
                   field_formatter_range:
-                    reverse: 0
-                    limit: '0'
-                    offset: '0'
+                    reverse: false
+                    limit: 0
+                    offset: 0
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode

@@ -84,9 +84,6 @@
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
         "patches": {
-            "drupal/field_formatter_range": {
-                "The module isn't layout builder compatible": "patches/field_formatter_range-layout_build-support-3006712-11.patch"
-            },
             "drupal/core": {
                 "Error: Call to a member function getLabel() after enabling layout_builder": "patches/2985882-field-85.patch"
             }
